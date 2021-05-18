@@ -144,6 +144,14 @@
     [self updatePlaceholderTextView];
 }
 
+- (void)setPlaceholderFont:(UIFont *)placeholderFont {
+    self.placeholderTextView.font = placeholderFont;
+}
+
+- (UIFont *)placeholderFont {
+    return self.placeholderTextView.font;
+}
+
 #pragma mark `placeholderColor`
 
 - (UIColor *)placeholderColor {

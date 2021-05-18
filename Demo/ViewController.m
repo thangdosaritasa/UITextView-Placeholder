@@ -42,6 +42,7 @@
     textView.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 50, 50)];
     textView.textContainer.exclusionPaths = @[path];
+    textView.placeholderFont = [UIFont boldSystemFontOfSize:11];
     [self.view addSubview:textView];
 }
 
